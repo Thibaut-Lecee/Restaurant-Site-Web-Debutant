@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/styles.css" type="text/css">
+<title>Projet Restaurant</title>
+
+<!-- Importer la police d'écriture -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kenia&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Martel:wght@600&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+
+
+   <!-- balise pour le haut de page -->
+<header>
+    <div class="title-box">
+<!--  titre croustishop-->
+<h1 id="Title">Croustishop</h1>
+
+<!-- Slogan Page -->
+<h2 id='slogan'>Des petits plats en douceur</h2>
+</div>
+
+<!-- Pour aller plus vite raccourci  
+.slider>    .slides>    .slide*x   > img[src"]
+le premier slider permet de créer une div slider
+ensuite slides div
+puis on met le nombre de slide * x
+et on source avec les img si on a des numéro on met $ devant puis extension fichier
+-->
+<div class="slider">
+    <div class="slides">
+        <div class="slide"><img src="images/1.jpg" alt="sushi"></div>
+        <div class="slide"><img src="images/2.jpg" alt="légume"></div>
+        <div class="slide"><img src="images/3.jpg" alt="burger"></div>
+        <div class="slide"><img src="images/4.jpg" alt="salade"></div>
+    </div>
+</div>
+
+</header>
+
+ <!-- Menu de Navigation-->
+ <div id="sticky-header" class="section-container">
+   <nav class="menu">
+       <ul>
+           <!-- li*x permet de mettre directement plusieurs puces -->
+           <!-- Eviter de mettre un bouton dans un menu navigation 
+        pas très cohérent -->
+        <!-- On ne peut pas mettre de class dans une balise mais on peut mettre plusieurs spécifications -->
+        <!-- ici on a nav-item et pizza / Séparer juste avec un espace -->
+           <li class="nav-item pizza"><a href="#pizza">Pizza</a></li>
+           <li class="nav-item salade"><a href="#salade">Salade</a></li>
+           <li class="nav-item burger"><a href="#burger">Burger</a></li>
+           <li class="nav-item boisson"><a href="#boisson">Boisson</a></li>
+         </ul>
+   </nav>
+</div>
+
+<!-- Les sections -->
+
+<!-- section pizza -->
+<main id="main">
+<section id="pizza" class="pizza">
+
+    <!-- création de div pour pouvoir mettre chaque image correspondante -->
+    <div class='item'>
+        <img src="images/pizza1.jpg">
+     <div class="item-infos">
+        <h3>Caprapiquante</h3>
+        <!-- Rajouter une barre juste en dessous -->
+        <hr>
+        <p>Chevre, Miel, Graines Toastés, piment rouge</p>
+        <p class="cost">12€00</p>
+     </div>
+    </div>
+
+   <div class="item">
+       <img src="images/pizza2.jpg">
+       <div class='item-infos'>
+        <h3>Strategia</h3>
+        <hr>
+        <p>Tomates, Mozzarella, basilique</p>
+        <p class="cost">9€00</p> 
+       </div>
+    
+   </div>
+
+  <div class="item">
+      <img src="images/pizza3.jpg">
+      <div class="item-infos">
+        <h3>Naturale</h3>
+        <hr>
+        <p>Chèvre, courgettes, basilique, carottes</p>
+        <p class="cost">10€00</p>
+      </div>
+    </section>
+   <!-- section salade -->
+   <section id="salade" class="salade">
+
+    <!-- création de div pour pouvoir mettre chaque image correspondante -->
+    <div class='item'>
+        <img src="/images/salade1.jpg">
+     <div class="item-infos">
+        <h3>Salade Poulet Betterave</h3>
+        <!-- Rajouter une barre juste en dessous -->
+        <hr>
+        <p>Poulet, mache, betterave, avocat, croutons</p>
+        <p class="cost">5€00</p>
+     </div>
+    </div>
+
+   <div class="item">
+       <img src="images/salade2.jpg">
+       <div class='item-infos'>
+        <h3>Salade grec maison</h3>
+        <hr>
+        <p>Salade, tomates, olives, feta, oignons basilique</p>
+        <p class="cost">4€00</p> 
+       </div>
+    
+   </div>
+
+  <div class="item">
+      <img src="images/salade3.jpg">
+      <div class="item-infos">
+        <h3>Salade tomates mozarella</h3>
+        <hr>
+        <p>Tomates, mozarella, salade, maches, epinard</p>
+        <p class="cost">6€00</p>
+      </div>
+    </section>
+      <!-- Section Burger -->
+      <section id="burger" class="burger">
+
+        <!-- création de div pour pouvoir mettre chaque image correspondante -->
+        <div class='item'>
+            <img src="images/burger1.jpg">
+         <div class="item-infos">
+            <h3>Villageois</h3>
+            <!-- Rajouter une barre juste en dessous -->
+            <hr>
+            <p>Steak, cheadar, salade, oignons</p>
+            <p class="cost">5€00 (Burger Uniquement)</p>
+         </div>
+        </div>
+    
+       <div class="item">
+           <img src="images/burger2.jpg">
+           <div class='item-infos'>
+            <h3>Basique</h3>
+            <hr>
+            <p>2 Steaks, chedar</p>
+            <p class="cost">5€00 (Burger Uniquement)</p> 
+           </div>
+        
+       </div>
+    
+      <div class="item">
+          <img src="images/burger3.jpg">
+          <div class="item-infos">
+            <h3>Legendaire</h3>
+            <hr>
+            <p>Steak, bacon, chedar</p>
+            <p class="cost">4€00 (Burger Uniquement)</p>
+          </div>
+        </section>
+          <!-- section Boisson -->
+          <section id="boisson" class="boisson">
+
+            <!-- création de div pour pouvoir mettre chaque image correspondante -->
+            <div class='item'>
+                <img src="images/boisson1.jpg">
+             <div class="item-infos">
+                <h3>Jus multifruits</h3>
+                <!-- Rajouter une barre juste en dessous -->
+                <hr>
+                <p>Banane, orange, pomme</p>
+                <p class="cost">3€00</p>
+             </div>
+            </div>
+        
+           <div class="item">
+               <img src="images/boisson2.jpg">
+               <div class='item-infos'>
+                <h3>Jus de Pastèque</h3>
+                <hr>
+                <p>Pasyèque du Jardin</p>
+                <p class="cost">2€00</p> 
+               </div>
+            
+           </div>
+        
+          <div class="item">
+              <img src="images/boisson3.jpg">
+              <div class="item-infos">
+                <h3>Boisson Chaude</h3>
+                <hr>
+                <p>Café, chocolat, thé </p>
+                <p class="cost">1€20</p>
+              </div>
+
+
+  </div>
+
+</section>
+</main>
+
+<!-- pied de page -->
+<footer>
+    &copy; 2021 - Projet by Thibaut Lecée | Tout droits réservés
+</footer>
+<!-- Partager / intégrer une carte  -->
+<!-- iframe pour mettre une map google -->
+<!-- charger le script JS -->
+<script src="js/stickyscroll.js"></script>
+    
+</body>
+
+
+
+
+
+
+</html>
